@@ -26,7 +26,7 @@ const Todoitem = ({id, title, completed}) => {
  };
  const handleSave = () =>{
     setIsEditing(false)
-    dispatch(todoActions.editTodo({id, title:editedTask}));
+    dispatch(todoActions.editTodoAsync({id, title:editedTask}));
     title = {editedTask}
     
  }
