@@ -23,7 +23,7 @@ const [Input, setInput] = useState("");
 
        const onFormSubmit = (event) => {
         event.preventDefault();
-        dispatch(todoActions.addTodo ({
+        dispatch(todoActions.addTodoAsync ({
             title:Input,
         }));
         setInput("");
